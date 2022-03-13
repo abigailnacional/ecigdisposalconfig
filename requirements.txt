@@ -4,6 +4,7 @@ click==8.0.4
 Flask==2.0.3
 flask-googlemaps==0.4.1
 Flask-SQLAlchemy==2.5.1
+Flask-WTF==1.0.0
 ghp-import==2.0.2
 greenlet==1.1.2
 htmlmin==0.1.12
@@ -32,4 +33,5 @@ SQLAlchemy==1.4.31
 urllib3==1.26.8
 watchdog==2.1.6
 Werkzeug==2.0.3
+WTForms==3.0.1
 zipp==3.7.0
