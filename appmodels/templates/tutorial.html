@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block content %}
+<head>
+    <style>
+    </style>
+</head>
+<body>
+    <!--Code for home page (not including the site header) goes here.-->
+    <ul>
+        <li><a href="{{url_for('index')}}">Home</a></li>
+        <li><a class="active" href="#tutorial">Tutorial</a></li>
+        <li><a href="{{url_for('findhhw', response=response)}}">Find HHW Center</a></li>
+    </ul>
+    <br><br>
+    
+    <h1>How to Handle E-Waste</h1>
+    <h2>Vape Pens and E-cigarettes</h2>
+    <p>E-cigarettes and vape pens are essentially the same type of device. They have a battery that powers 
+        a heating element or “atomizer” that vaporizes “juice” containing nicotine or other substances so 
+        that it can be inhaled. There is no standard type of device. The batteries and juice cartridges/tanks/pods 
+        come in a variety of colors, shapes and sizes.</p>
+    <h2>Juice, cartridges, and pods</h2>
+    <p>Bottles of juice used to refill tanks are generally plastic bottles from 1 to 4 oz. (30-120 ml) in size, 
+        although larger bottles are available. Prefilled cartridges or pods come in a wide range of sizes and colors. 
+        Nicotine containing juice is hazardous, so bottles and cartridges that are still full or partially full should 
+        be taken to your Household Hazardous Waste (HHW) facility for proper disposal. Contact your county to find out 
+        if they accept these items at HHW facilities or events.</p>
+    <h3>Find the nearest HHW facility with the <a href="{{url_for('findhhw', response=response)}}">Find HHW Center</a> page.</h3>
+    <p>Nicotine is dangerous and can be deadly if ingested or absorbed through the skin. All cartridges, pods and bottles 
+        containing nicotine should be stored well out of reach of children.</p>
+    <h3>Cartridges containing THC, CBD or other marijuana derivatives</h3>
+    <p>These may be placed in the trash. They generally have a marijuana leaf symbol on them, but not always. HHW facilities 
+        cannot accept illegal drugs.</p>
+    <h2>Batteries</h2>
+    <h3>Single use, non-rechargeable or “disposable”</h3>
+    <p>These devices contain lithium batteries that are a fire hazard when placed in the garbage or a recycling bin. Do not 
+        place these items in your garbage. Contact your county Solid Waste or Household Hazardous waste program for 
+        information on proper disposal.</p>
+    <h3>Devices with rechargeable batteries</h3>
+    <p>Remove the cartridge or pod from the battery. Take the battery to a HHW facility or a Batteries Plus Bulbs location. 
+        Do not place these batteries in a rechargeable battery collection bin that is "unmanned" such as at the entrance to
+         a store or public facility. <b>It is illegal to place rechargeable batteries in the trash.</b></p>
+    <h3>“Push button” vs. “draw” activated batteries.</h3>
+    <p>Devices or batteries with a push button to turn on the atomizer are dangerous if left on. Follow the manufacturer’s 
+        instructions on how to turn off the battery. Always turn off the battery when the device is not in use and before 
+        recycling it. If the battery is left on, the button may be pushed in when placed against other items in a pocket, 
+        purse or storage container. Most batteries will continue to heat the atomizer as long as the button is pressed. Vape 
+        pens and e-cigs can reach a temperature of 400° to 600° F in a matter of seconds. Paper and cotton can self-ignite 
+        at 451° F, so the devices can get hot enough to start fires.</p>
+    <p>Removing the battery from the outer case is a difficult task, generally requiring tools, so it is not recommended 
+        unless you are very familiar with how to do it. If a battery is removed from the outer casing, tape the terminals 
+        prior to placing the battery in storage or transporting it to a rechargeable battery collector. Let them know you 
+        have a push button vape pen battery when delivering it so they can set it aside for safe disassembly and packaging.</p>
+    <h1>Important Notes</h1>
+    <p>Always be careful handling confiscated or discarded e-cigarettes, e-liquid products, and batteries. 
+        Liquid nicotine can be absorbed through the skin and cause accidental poisoning.</p>
+    <p>Used and discarded pods often contain unused nicotine. Handle these items carefully to avoid 
+        unintentional exposure and do not throw them away in the regular trash.</p>
+    <p>Do not throw rechargeable batteries into the trash.</p>
+    <p>Do not rinse e-cigarette items, such as spent cartridges, to remove the liquid nicotine residue. 
+        That water will become hazardous waste, and you will need to store and dispose of the water properly.</p>
+</body>
+{% endblock %}

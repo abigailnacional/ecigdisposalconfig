@@ -3,26 +3,37 @@
 {% block content %}
 <head>
     <style>
-        #map {
-            height: 500px;
-            width: 100%;
-        }
     </style>
 </head>
 <body>
     <!--Code for home page (not including the site header) goes here.-->
-    <div id = "map"></div>
-    <script>
-        function initMap() {
-            var location = {lat: -25.363, lng: 131.044};
-            var map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 4,
-                center: location
-            });
-        }
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHZYXZczuX32rF9XrxeIWrb6Hovn0Kb9w&callback=initMap"></script>
-    <p>{{response.text}}</p>
-    
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="{{url_for('tutorial')}}">Tutorial</a></li>
+        <li><a href="{{url_for('findhhw', response=response)}}">Find HHW Center</a></li>
+    </ul>
+    <br><br>
+
+    <h1>Why should I take extra care with my e-cig waste?</h1>
+    <p>E-cigarettes, including 
+        rechargeable batteries and the cartridges and bottles 
+        that contain e-liquids (liquid nicotine mixtures), can pose a threat to human health 
+        and to the environment if they are not disposed of properly. E-cigarette and e-liquid 
+        waste should not be thrown in the regular trash or flushed down a sink. Instead, these 
+        items should be taken safely to a hazardous waste facility.</p>
+    <p>Nicotine, including nicotine salt, is listed by the Environmental Protection Agency (EPA) as an
+        acute hazardous waste. Discarded or neglected vaping products may contain harmful substances, 
+        including unused liquid nicotine. Improper storage and disposal of these items may lead to 
+        unintentional exposure and accidental nicotine poisoning. Poison control centers receive 
+        thousands of calls per year about exposures to liquid nicotine, which can be fatal to small 
+        children involved in accidental exposures.
+        Improper disposal of e-cigarettes and e-liquid products can hurt the environment. If thrown 
+        in the trash or flushed into the sewer system, the nicotine solution in an e-liquid product 
+        can seep into the ground or water and become a danger for wildlife and humans. As e-cigarette
+         batteries degrade, the compounds in them can also seep into nearby water. Additionally, 
+         lithium ion batteries have been linked to explosions in recycling trucks when batteries are 
+         not properly disposed of.</p>
+
+    <h1>Read the Tutorial page for information about how to safely dispose of your E-waste!</h1>
 </body>
 {% endblock %}
