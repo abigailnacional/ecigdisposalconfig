@@ -1,9 +1,35 @@
+certifi==2021.10.8
+charset-normalizer==2.0.12
 click==8.0.4
- Flask==2.0.3
- Flask-SQLAlchemy==2.5.1
- greenlet==1.1.2
- itsdangerous==2.1.0
- Jinja2==3.0.3
- MarkupSafe==2.1.0
- SQLAlchemy==1.4.31
- Werkzeug==2.0.3
+Flask==2.0.3
+flask-googlemaps==0.4.1
+Flask-SQLAlchemy==2.5.1
+ghp-import==2.0.2
+greenlet==1.1.2
+htmlmin==0.1.12
+idna==3.3
+importlib-metadata==4.11.2
+itsdangerous==2.1.0
+Jinja2==3.0.3
+jsmin==3.0.1
+Markdown==3.3.6
+MarkupSafe==2.1.0
+mergedeep==1.3.4
+mkdocs==1.2.3
+mkdocs-material==5.5.14
+mkdocs-material-extensions==1.0.3
+mkdocs-minify-plugin==0.3.0
+packaging==21.3
+Pygments==2.11.2
+pymdown-extensions==9.2
+pyparsing==3.0.7
+python-dateutil==2.8.2
+PyYAML==6.0
+pyyaml_env_tag==0.1
+requests==2.27.1
+six==1.16.0
+SQLAlchemy==1.4.31
+urllib3==1.26.8
+watchdog==2.1.6
+Werkzeug==2.0.3
+zipp==3.7.0

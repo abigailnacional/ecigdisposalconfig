@@ -3,10 +3,26 @@
 {% block content %}
 <head>
     <style>
+        #map {
+            height: 500px;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
     <!--Code for home page (not including the site header) goes here.-->
-    <p>Hello world!</p>
+    <div id = "map"></div>
+    <script>
+        function initMap() {
+            var location = {lat: -25.363, lng: 131.044};
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: location
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHZYXZczuX32rF9XrxeIWrb6Hovn0Kb9w&callback=initMap"></script>
+    <p>{{response.text}}</p>
+    
 </body>
 {% endblock %}
