@@ -5,7 +5,7 @@ Code for the E-Cig Disposal Config project for MLH's Tidy the Hack Up II Hackath
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/abigailnacional/touch-grass.git
+   git clone https://github.com/abigailnacional/ecigdisposalconfig.git
    ```
 2. Navigate to the folder
    ```sh
